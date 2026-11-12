@@ -1,5 +1,5 @@
 {
-  "at": "2026-11-12T07:02:25.560Z",
+  "at": "2026-11-12T07:40:08.439Z",
   "browser": "Edge Chromium headless",
   "coverage": [
     14,
@@ -21,65 +21,65 @@
     {
       "width": 320,
       "inHeader": true,
-      "centerGap": 0.0078125,
+      "centerGap": 89.171875,
       "fits": true,
-      "height": 91,
+      "height": 57,
       "overlap": false
     },
     {
       "width": 390,
       "inHeader": true,
-      "centerGap": 0.0078125,
+      "centerGap": 98.5,
       "fits": true,
-      "height": 91,
+      "height": 57,
       "overlap": false
     },
     {
       "width": 430,
       "inHeader": true,
-      "centerGap": 0.0078125,
+      "centerGap": 118.5,
       "fits": true,
-      "height": 91,
+      "height": 57,
       "overlap": false
     },
     {
       "width": 480,
       "inHeader": true,
-      "centerGap": 0.0078125,
+      "centerGap": 143.5,
       "fits": true,
-      "height": 91,
+      "height": 57,
       "overlap": false
     },
     {
       "width": 600,
       "inHeader": true,
-      "centerGap": 0.0078125,
+      "centerGap": 203.5,
       "fits": true,
-      "height": 91,
+      "height": 57,
       "overlap": false
     },
     {
       "width": 640,
       "inHeader": true,
-      "centerGap": 0.0078125,
+      "centerGap": 173,
       "fits": true,
-      "height": 91,
+      "height": 61.546875,
       "overlap": false
     },
     {
       "width": 768,
       "inHeader": true,
-      "centerGap": 0,
+      "centerGap": 237,
       "fits": true,
-      "height": 57,
+      "height": 61.546875,
       "overlap": false
     },
     {
       "width": 1440,
       "inHeader": true,
-      "centerGap": 0,
+      "centerGap": 393,
       "fits": true,
-      "height": 57,
+      "height": 61.546875,
       "overlap": false
     }
   ],
