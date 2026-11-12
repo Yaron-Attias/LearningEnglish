@@ -1,0 +1,89 @@
+{
+  "at": "2026-11-12T07:02:25.560Z",
+  "browser": "Edge Chromium headless",
+  "coverage": [
+    14,
+    14,
+    56,
+    28
+  ],
+  "viewports": [
+    320,
+    390,
+    430,
+    480,
+    600,
+    640,
+    768,
+    1440
+  ],
+  "headerChecks": [
+    {
+      "width": 320,
+      "inHeader": true,
+      "centerGap": 0.0078125,
+      "fits": true,
+      "height": 91,
+      "overlap": false
+    },
+    {
+      "width": 390,
+      "inHeader": true,
+      "centerGap": 0.0078125,
+      "fits": true,
+      "height": 91,
+      "overlap": false
+    },
+    {
+      "width": 430,
+      "inHeader": true,
+      "centerGap": 0.0078125,
+      "fits": true,
+      "height": 91,
+      "overlap": false
+    },
+    {
+      "width": 480,
+      "inHeader": true,
+      "centerGap": 0.0078125,
+      "fits": true,
+      "height": 91,
+      "overlap": false
+    },
+    {
+      "width": 600,
+      "inHeader": true,
+      "centerGap": 0.0078125,
+      "fits": true,
+      "height": 91,
+      "overlap": false
+    },
+    {
+      "width": 640,
+      "inHeader": true,
+      "centerGap": 0.0078125,
+      "fits": true,
+      "height": 91,
+      "overlap": false
+    },
+    {
+      "width": 768,
+      "inHeader": true,
+      "centerGap": 0,
+      "fits": true,
+      "height": 57,
+      "overlap": false
+    },
+    {
+      "width": 1440,
+      "inHeader": true,
+      "centerGap": 0,
+      "fits": true,
+      "height": 57,
+      "overlap": false
+    }
+  ],
+  "dialogs": 0,
+  "errors": [],
+  "scope": "Unit 2 only: every variant, image decodes, locked-answer reloads, responsive header/overflow, focus, new rounds and absence of replacement dialogs; not physical-device or student comprehension validation."
+}

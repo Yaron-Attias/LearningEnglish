@@ -73,7 +73,7 @@ for(const role of ['attack','defend'])for(const type of [2,3])scenario('FOCUS-PE
   if(role==='defend'){right(a).click();a.click('.target.t1');a.click('#pa-arena .kick');}
   const current=a.w.eval('mission[step]');assert.equal(current.type,type);const name=current.w.en;
   a.all('[data-penalty-choice]').find(b=>b!==right(a)).click();
-  assert.ok(a.all('[data-focus]').some(b=>b.dataset.focus===name));assert.equal(a.$('#focusCount').textContent,'1 מילים');assert.equal(a.state().stats[name].focus,true);
+  assert.ok(a.all('[data-focus]').some(b=>b.dataset.focus===name));assert.equal(a.$('#focusCount').textContent,'מילה אחת');assert.equal(a.state().stats[name].focus,true);
   right(a).click();a.click('.target.t1');a.click('#pa-arena .kick');
   for(let turns=0;a.w.eval('mission[step].w.en')!==name&&turns<4;turns++){right(a).click();a.click('.target.t1');a.click('#pa-arena .kick');}
   assert.equal(a.w.eval('mission[step].w.en'),name);right(a).click();

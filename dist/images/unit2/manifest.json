@@ -1,0 +1,78 @@
+{
+  "tool": "built-in image_gen",
+  "reference": "SodHamila dist/assets/3.webp",
+  "identity": "same fictional14yo curly brown hair olive skin teal hoodie cream shirt teal headphones",
+  "style": "cinematic semi-realistic warm teal amber no text",
+  "images": [
+    {
+      "id": "area",
+      "scene": "The boy points to a clearly bounded picnic area in a park, its boundary visible through low wooden fence, wide landscape.",
+      "source": "C:\\Users\\Yaron\\.codex\\generated_images\\01a1cc20-c430-7c62-8918-ff445dca9ce0\\exec-0a47c75f-b5f1-4244-bff2-befda82734e1.png"
+    },
+    {
+      "id": "collapse",
+      "scene": "The boy stands safely behind a barrier watching an old empty wooden shed collapsing inward, visible falling roof, no people inside.",
+      "source": "C:\\Users\\Yaron\\.codex\\generated_images\\01a1cc20-c430-7c62-8918-ff445dca9ce0\\exec-a7445c16-08e8-4343-82e5-b84fee6cc8ee.png"
+    },
+    {
+      "id": "disaster",
+      "scene": "The boy safely surveys a town street after a flood: muddy water, damaged empty houses and uprooted trees. No injured people.",
+      "source": "C:\\Users\\Yaron\\.codex\\generated_images\\01a1cc20-c430-7c62-8918-ff445dca9ce0\\exec-e9837644-41bb-4ab4-9a8d-99216d349133.png"
+    },
+    {
+      "id": "discover",
+      "scene": "The boy pushes aside leaves and discovers a beautiful hidden waterfall, delighted surprise.",
+      "source": "C:\\Users\\Yaron\\.codex\\generated_images\\01a1cc20-c430-7c62-8918-ff445dca9ce0\\exec-81da2d5d-1eca-4d1d-a0c1-05ecb1275b96.png"
+    },
+    {
+      "id": "earthquake",
+      "scene": "The boy crouches safely under a sturdy school desk during an earthquake; books shaking and hanging lamp swinging clearly illustrate ground shaking. No injury.",
+      "source": "C:\\Users\\Yaron\\.codex\\generated_images\\01a1cc20-c430-7c62-8918-ff445dca9ce0\\exec-06308631-471e-4df1-b84e-3944b955a404.png"
+    },
+    {
+      "id": "huge",
+      "scene": "The boy stands at a safe viewing area beside an enormous elephant, scale contrast very clear.",
+      "source": "C:\\Users\\Yaron\\.codex\\generated_images\\01a1cc20-c430-7c62-8918-ff445dca9ce0\\exec-dd58faec-8bb8-4ed8-9ba8-733acdecde4c.png"
+    },
+    {
+      "id": "lose-hope",
+      "scene": "The boy sits discouraged beside an unfinished difficult puzzle after several failed tries, shoulders drooping, hope fading, no danger.",
+      "source": "C:\\Users\\Yaron\\.codex\\generated_images\\01a1cc20-c430-7c62-8918-ff445dca9ce0\\exec-34494155-0168-435f-9b5c-380adfc2c8f6.png"
+    },
+    {
+      "id": "miracle",
+      "scene": "The boy joyfully reunites with his small lost dog after a long search, amazed relief; the healthy dog emerges from a woodland path.",
+      "source": "C:\\Users\\Yaron\\.codex\\generated_images\\01a1cc20-c430-7c62-8918-ff445dca9ce0\\exec-167d0657-57e0-44f5-aa16-5f0391b8ee3e.png"
+    },
+    {
+      "id": "rescue-team",
+      "scene": "The boy watches a professional rescue team with helmets ropes and stretcher helping a healthy hiker down a rocky trail, boy safely aside.",
+      "source": "C:\\Users\\Yaron\\.codex\\generated_images\\01a1cc20-c430-7c62-8918-ff445dca9ce0\\exec-1f3bc06e-9536-44c9-b4d1-52d3b546b64a.png"
+    },
+    {
+      "id": "ruins",
+      "scene": "The boy explores ancient stone castle ruins with broken walls, open arches, grass and fallen masonry.",
+      "source": "C:\\Users\\Yaron\\.codex\\generated_images\\01a1cc20-c430-7c62-8918-ff445dca9ce0\\exec-c69909cc-2646-4284-82ca-50952dfe04b4.png"
+    },
+    {
+      "id": "situation",
+      "scene": "The boy studies a difficult situation: at a trail crossroads a fallen tree blocks one path and rain clouds approach; he considers a map and options.",
+      "source": "C:\\Users\\Yaron\\.codex\\generated_images\\01a1cc20-c430-7c62-8918-ff445dca9ce0\\exec-2a44a539-9e58-41ec-bdae-668d3203d8e3.png"
+    },
+    {
+      "id": "survive",
+      "scene": "The boy actively uses survival skills on a safe forest camping trip: building a rain shelter and collecting water beside supplies, confident action.",
+      "source": "C:\\Users\\Yaron\\.codex\\generated_images\\01a1cc20-c430-7c62-8918-ff445dca9ce0\\exec-ed665e04-858d-46b9-8846-6040747dff0d.png"
+    },
+    {
+      "id": "survivor",
+      "scene": "The boy as a healthy rescued survivor, wrapped in an emergency blanket at a rescue station, relieved with a responder nearby, distant storm aftermath.",
+      "source": "C:\\Users\\Yaron\\.codex\\generated_images\\01a1cc20-c430-7c62-8918-ff445dca9ce0\\exec-6fe60e91-6333-4484-af1d-ef66f1685684.png"
+    },
+    {
+      "id": "trap",
+      "scene": "The boy safely outside sees a fallen tree blocking a cabin's only door, trapping a healthy adult inside visible through window; he calls for help. No injury.",
+      "source": "C:\\Users\\Yaron\\.codex\\generated_images\\01a1cc20-c430-7c62-8918-ff445dca9ce0\\exec-5e6a6264-b835-4720-ac86-0be5ccb7525a.png"
+    }
+  ]
+}

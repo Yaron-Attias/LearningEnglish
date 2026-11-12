@@ -3,12 +3,14 @@ const fs=require('node:fs');
 const path=require('node:path');
 const root=path.resolve(__dirname,'..');
 const KEY='wordsteps-grade8-mosaic-v1';
-function boot({stored,storageBlocked=false,speech=true,confirm=true,shotOutcome=(team,i)=>team==='home'||i<4}={}){
+function boot({stored,unit2Stored,unit='unit-1',storageBlocked=false,speech=true,confirm=true,shotOutcome=(team,i)=>team==='home'||i<4}={}){
   const dom=new JSDOM(fs.readFileSync(path.join(root,'dist/index.html'),'utf8'),{url:'https://wordsteps.test/',runScripts:'outside-only',pretendToBeVisual:true});
   const w=dom.window;w.structuredClone=structuredClone;w.confirm=()=>confirm;
   w.HTMLElement.prototype.scrollIntoView=function(){};
+  w.scrollTo=()=>{};w.matchMedia=()=>({matches:false,addEventListener(){},removeEventListener(){}});
   const spoken=[];if(speech){w.speechSynthesis={cancel(){},getVoices(){return [{lang:'en-US'}]},speak(u){spoken.push(u);}};w.SpeechSynthesisUtterance=function(text){this.text=text;};}
   if(stored!==undefined)w.localStorage.setItem(KEY,typeof stored==='string'?stored:JSON.stringify(stored));
+  if(unit2Stored!==undefined)w.localStorage.setItem('wordsteps-grade8-unit2-v1',typeof unit2Stored==='string'?unit2Stored:JSON.stringify(unit2Stored));
   if(storageBlocked){w.Storage.prototype.getItem=function(){throw Error('blocked');};w.Storage.prototype.setItem=function(){throw Error('blocked');};}
   const vm=require('node:vm');
   let frameTime=0;w.requestAnimationFrame=fn=>{fn(frameTime+=100);return 0;};w.cancelAnimationFrame=()=>{};
@@ -18,6 +20,12 @@ function boot({stored,storageBlocked=false,speech=true,confirm=true,shotOutcome=
   vm.runInContext(fs.readFileSync(path.join(root,'dist/words.js'),'utf8'),dom.getInternalVMContext(),{filename:'words.js'});
   vm.runInContext(fs.readFileSync(path.join(root,'dist/app.js'),'utf8'),dom.getInternalVMContext(),{filename:'app.js'});
   for(const file of ['present-simple-data.js','present-simple.js']) vm.runInContext(fs.readFileSync(path.join(root,'dist',file),'utf8'),dom.getInternalVMContext(),{filename:file});
+  for(const file of ['unit2-data.js','unit2.js','units.js']) {
+    const source=path.join(root,'dist',file);
+    if(fs.existsSync(source))vm.runInContext(fs.readFileSync(source,'utf8'),dom.getInternalVMContext(),{filename:file});
+  }
+  // Legacy suites explicitly exercise Unit 1. Pass unit:null to test real boot defaults.
+  if(unit&&w.WordUnits)w.WordUnits.select(unit);
   const $=s=>w.document.querySelector(s), all=s=>[...w.document.querySelectorAll(s)];
   const click=s=>{const el=$(s);if(!el)throw Error('Missing '+s);el.click();};
   const mode=i=>click(`[data-mode="${i}"]`);

@@ -15,10 +15,10 @@ check('Interior click keeps dialog open',()=>{d.dispatchEvent(new w.MouseEvent('
 check('Close button restores focus and scroll class',()=>{click('#about-close');assert(!d.hasAttribute('open'));assert.equal(w.document.activeElement,$('#about-open'));assert(!w.document.body.classList.contains('about-is-open'));});
 check('Continue button closes',()=>{click('#about-open');click('#about-done');assert(!d.hasAttribute('open'));});
 check('Outside-panel click closes',()=>{click('#about-open');d.dispatchEvent(new w.MouseEvent('click',{clientX:20,clientY:20,bubbles:true}));assert(!d.hasAttribute('open'));});
-check('Profile links and safe new-tab attributes',()=>{for(const a of w.document.querySelectorAll('footer a,#about-dialog a')){assert.equal(a.href,'https://github.com/YaronAttias');assert.equal(a.target,'_blank');assert(a.rel.includes('noopener')&&a.rel.includes('noreferrer'));}assert.equal(w.document.querySelectorAll('footer a,#about-dialog a').length,2);});
+check('Profile links and safe new-tab attributes',()=>{for(const a of w.document.querySelectorAll('footer a,#about-dialog a')){assert.equal(a.href,'https://github.com/Yaron-Attias');assert.equal(a.target,'_blank');assert(a.rel.includes('noopener')&&a.rel.includes('noreferrer'));}assert.equal(w.document.querySelectorAll('footer a,#about-dialog a').length,2);});
 check('No email in footer or dialog',()=>assert(!/mailto:|[\w.+-]+@[\w.-]+\.[a-z]{2,}/i.test($('footer').outerHTML+d.outerHTML)));
 check('Learning storage unchanged by About interactions',()=>assert.equal(w.localStorage.getItem(KEY),saved));
 check('Card navigation still works',()=>{const before=$('.word').textContent;click('#next');assert.notEqual($('.word').textContent,before);});
 check('Speech requests still work',()=>{const button=app.$('#listen');assert(button);button.click();assert(app.spoken.length>0);});
-const report={date:'2026-10-25',passed:checks.length,checks,limits:['Native browser verification blocked by file URL security policy.','Dialog API simulated in jsdom; Escape, native focus containment, actual layout, mobile scrolling and audible output are not verified.']};
+const report={date:'2026-11-11',passed:checks.length,checks,limits:['Native browser verification blocked by file URL security policy.','Dialog API simulated in jsdom; Escape, native focus containment, actual layout, mobile scrolling and audible output are not verified.']};
 fs.writeFileSync('tests/reports/about-verification.json',JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report,null,2));app.close();
